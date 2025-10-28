@@ -5,32 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .cards{
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 25px;
+      margin: 0px;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bfff;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input[type="text"] {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    .search-box button {
+      background-color: #00bfff;
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      margin-left: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .search-box button:hover {
+      background-color: #0099cc;
+    }
+    .cards{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
             grid-template-rows: auto;
-            margin: 0px;
-            max-width: 1200px;
+            margin: 4px;
+            max-width: 1400px;
             gap: 20px;
-            border-radius: 10%;
         }
-        .cards img{
+    .cards img{
             width: 100%;
             height: auto;
         }
-        img:hover{
+    img:hover{
             transform:scale(1.05);
         }
+    .card p {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
     </style>
 </head>
 <body>
+    <nav>
+    <div class="logo">MARVEL WALLPAPERS</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+     <div class="search-box">
+      <input type="text" placeholder="Search here...">
+      <button>Search</button>
+    </div>
+  </nav>
   <section>
     <div class="cards">
-        <img src="./assets/wp12387167-4k-uhd-spider-man-wallpapers.jpg">
-        <img src="./assets/wp13310183-wanda-4k-desktop-wallpapers.jpg">
-        <img src="./assets/wp4142534-ant-man-marvel-wallpapers.jpg">
-        <img src="./assets/wp9744013-shang-chi-4k-wallpapers.jpg">
+      <div class="card">
+        <img src="./assets/wp12387167-4k-uhd-spider-man-wallpapers.jpg" alt="Spider Man">
+        <p>Spider-Man</p>
+      </div>
+      <div class="card">
+        <img src="./assets/wp13310183-wanda-4k-desktop-wallpapers.jpg" alt="Wanda">
+        <p>Wanda</p>
+      </div>
+      <div class="card">
+        <img src="./assets/wp4142534-ant-man-marvel-wallpapers.jpg" alt="Ant-Man">
+        <p>Ant-Man</p>
+      </div>
+      <div class="card">
+        <img src="./assets/wp9744013-shang-chi-4k-wallpapers.jpg" alt="Shang-Chi">
+        <p>Shang-Chi</p>
+      </div>
+      <div>
+        <img src="./assets/wp12748755-iron-man-4k-logo-wallpapers.jpg" alt="Iron Man">
+        <p>Iron Man</p>
+      </div>
+      <div>
+        <img src="./assets/wp14745612-hulk-desktop-art-wallpapers.jpg" alt="Hulk">
+        <p>Hulk</p>
+      </div>
+      <div>
+        <img src="./assets/wp15008750-marvel-captain-america-brave-new-world-poster-wallpapers.webp" alt="Captain America">
+        <p>Captain America</p>
+      </div>
+      <div>
+        <img src="./assets/wp9251113-doctor-strange-benedict-cumberbatch-and-rachel-mcadams-wallpapers.jpg" alt="Doctor Strange">
+        <p>Doctor Strange</p>
+      </div>
+      <div>
+        <img src="./assets/wp12840699-thanos-desktop-4k-wallpapers.jpg" alt="Thanos">
+        <p>Thanos</p>
+      </div>
+      <div>
+        <img src="./assets/wp2550892-deadpool-hd-wallpaper.jpg" alt="Dead Pool">
+        <p>Dead Pool</p>
+      </div>
+      <div>
+        <img src="./assets/uwp4742868.jpeg" alt="Wolverine">
+        <p>Wolverine</p>
+      </div>
+      <div>
+        <img src="./assets/uwp4858265.jpeg" alt="Black Panther">
+        <p>Black Panther</p>
+      </div>
     </div>
-  </section>  
+  </section>
 </body>
 </html>
